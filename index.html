@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,47 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/normalize.css" />
     <link rel="stylesheet" type="text/css" href="CSS/style.css" />
-    <title>Document</title>
+    <title>RK</title>
 </head>
 
 <body class="bodyRK">
 
 
-    <header class="headerRK">
-        <p>Вариант 1: Катаклизмы на Марсе</p>
+    <header>
+        Вариант 1: Катаклизмы на Марсе
         <button class="OpenModalWindow">Открыть окно</button>
     </header>
-    
+
     <main class="mainRK">
 
 
         <div class="OutModalWindow">
             <form class="ModalWindow">
-                <label>
-                    <select name="typeofthreat" id="typeofthreat">
-                        <option>Землятресение</option>
-                        <option>Ураган</option>
-                        <option>Засуха</option>
-                    </select>
-                    <p class="ModalText">Тип угрозы</p>
-                </label>
+                <label class="ModalText">Тип угрозы</label>
+                <select name="typeofthreat" id="typeofthreat">
+                    <option>Землятресение</option>
+                    <option>Ураган</option>
+                    <option>Засуха</option>
+                </select>
 
-                <label>
-                    <input type="date" id="dateofthreat" class="field" required>
-                    <p class="ModalText">Дата</p>
-                </label>
+                <label class="ModalText">Дата</label>
+                <input type="date" id="dateofthreat" class="field" required>
 
-                <label>
-                    <input type="text" name="Applicant" id="Applicant" class="field" required>
-                    <p class="ModalText">Заявитель</p>
-                </label>
-            
-                <label>Уровень угрозы (1-10):</label>
+                <label class="ModalText">Заявитель</label>
+                <input type="text" name="Applicant" id="Applicant" class="field" required>
+
+                <label class="ModalText">Уровень угрозы (1-10):</label>
                 <input type="number" id="Threatlevel" name="Threatlevel" min="1" max="10" required>
 
-                <p>
-                <button type="submit" class="SubmitForm">Отправить</button>
-                <button class="CloseModalWindow">Закрыть</button></p>
+                <div>
+                    <button type="submit" class="SubmitForm">Отправить</button>
+                    <button class="CloseModalWindow">Отмена</button>
+                </div>
             </form>
         </div>
 
@@ -54,7 +50,7 @@
 
     </main>
 
-    <footer class="footerRK">
+    <footer>
         <p>Бражников Иван Евгеньевич</p>
         <p>201-324</p>
     </footer>
