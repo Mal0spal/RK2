@@ -24,20 +24,21 @@
         <div class="OutModalWindow">
             <form class="ModalWindow">
                 <label class="ModalText">Тип угрозы</label>
-                <select name="typeofthreat" id="typeofthreat">
-                    <option>Землятресение</option>
-                    <option>Ураган</option>
-                    <option>Засуха</option>
+                <select name="typeofthreat" id="typeofthreat" required>
+                    <option value="" selected disabled>-</option>
+                    <option value="Землятресение">Землятресение</option>
+                    <option value="Ураган">Ураган</option>
+                    <option value="Засуха">Засуха</option>
                 </select>
 
                 <label class="ModalText">Дата</label>
                 <input type="date" id="dateofthreat" class="field" required>
 
                 <label class="ModalText">Заявитель</label>
-                <input type="text" name="Applicant" id="Applicant" class="field" required>
+                <input type="text" name="Applicant" id="Applicant" class="field">
 
                 <label class="ModalText">Уровень угрозы (1-10):</label>
-                <input type="number" id="Threatlevel" name="Threatlevel" min="1" max="10" required>
+                <input type="number" id="Threatlevel" name="Threatlevel" min="1" max="10">
 
                 <div>
                     <button type="submit" class="SubmitForm">Отправить</button>
